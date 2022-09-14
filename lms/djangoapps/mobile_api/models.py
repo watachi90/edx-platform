@@ -101,3 +101,21 @@ class IgnoreMobileAvailableFlagConfig(ConfigurationModel):
 
     class Meta:
         app_label = "mobile_api"
+
+
+class MobileIapConfig(models.Model):
+    """
+    Mobile config for in-app purchases. Flag values can be added dynamically.
+
+    .. no_pii:
+    """
+    name = models.CharField(max_length=255)
+    enabled = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        app_label = "mobile_api"
+
+    def __str__(self):
+        return self.name
