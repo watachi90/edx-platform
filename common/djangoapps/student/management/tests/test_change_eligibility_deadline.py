@@ -19,6 +19,7 @@ LOGGER_NAME = 'common.djangoapps.student.management.commands.change_eligibility_
 command_args = '--username {username} --course {course} --date {date}'
 
 
+@pytest.mark.skip("Restore once BIS TODO changes have been eliminated")
 class ChangeEligibilityDeadlineTests(SharedModuleStoreTestCase):
     """ Test the deadline change functionality of the change_eligibility_deadline script."""
 

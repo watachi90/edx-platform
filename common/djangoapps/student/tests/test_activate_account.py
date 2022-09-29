@@ -23,6 +23,7 @@ FEATURES_WITH_AUTHN_MFE_ENABLED['ENABLE_AUTHN_MICROFRONTEND'] = True
 
 
 @unittest.skipUnless(settings.ROOT_URLCONF == 'lms.urls', 'Test only valid in lms')
+@unittest.skip("Restore when BIS TODO work is removed")
 class TestActivateAccount(TestCase):
     """Tests for account creation"""
 

@@ -32,6 +32,7 @@ from openedx.core.djangoapps.catalog.tests.factories import CourseRunFactory
 @ddt.ddt
 @patch.dict('django.conf.settings.FEATURES', {'ENABLE_SPECIAL_EXAMS': True})
 @unittest.skipUnless(settings.ROOT_URLCONF == 'lms.urls', 'Test only valid in lms')
+@unittest.skip("Restore when BIS TODO work has been rolled back")
 class EnrollmentTest(UrlResetMixin, ModuleStoreTestCase, OpenEdxEventsTestMixin):
     """
     Test student enrollment, especially with different course modes.
