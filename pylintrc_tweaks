@@ -27,6 +27,10 @@ disable+ =
     unused-argument,
     unsubscriptable-object,
     abstract-method,
+    not-callable,
+    unsupported-binary-operation,
+    missing-timeout,
+    c-extension-no-member,
 
 [BASIC]
 attr-rgx = [a-z_][a-z0-9_]{2,40}$

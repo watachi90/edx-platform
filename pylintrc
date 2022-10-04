@@ -307,6 +307,10 @@ disable =
 	unused-argument,
 	unsubscriptable-object,
 	abstract-method,
+	not-callable,
+	unsupported-binary-operation,
+	missing-timeout,
+	c-extension-no-member,
 
 [REPORTS]
 output-format = text
@@ -403,4 +407,4 @@ int-import-graph =
 [EXCEPTIONS]
 overgeneral-exceptions = Exception
 
-# ed8b29a01f15414431ac5cfa17bc2eb9fcc47fb3
+# 5834243a927c37bcc762ff8160cd12197a61c40d
