@@ -38,11 +38,5 @@ jobs:
       - name: Install python dependencies
         run: pip install -r requirements/edx/development.txt
 
-      # As long there are sub-projects[1] in edx-platform, we analyze each
-      # project separately here, in order to make import-linting errors easier
-      # to pinpoint.
-      #
-      #  [1] https://openedx.atlassian.net/browse/BOM-2579
-
       - name: Analyze imports (repo root)
         run: make lint-imports
