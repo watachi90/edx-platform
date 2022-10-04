@@ -1844,7 +1844,7 @@ class CombinedSystem:
 
         """
         context = context or {}
-        return self.__getattr__('render')(block, view_name, context)
+        return self.__getattr__('render')(block, view_name, context)  # pylint: disable=unnecessary-dunder-call
 
     def service(self, block, service_name):
         """Return a service, or None.
