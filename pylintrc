@@ -311,6 +311,8 @@ disable =
 	unsupported-binary-operation,
 	missing-timeout,
 	c-extension-no-member,
+	unnecessary-lambda-assignment,
+	no-name-in-module,
 
 [REPORTS]
 output-format = text
@@ -407,4 +409,4 @@ int-import-graph =
 [EXCEPTIONS]
 overgeneral-exceptions = Exception
 
-# 5834243a927c37bcc762ff8160cd12197a61c40d
+# 567bf30b121db79bc07a7028651f7efa0724e8a4

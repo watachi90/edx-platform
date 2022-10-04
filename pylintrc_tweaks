@@ -31,6 +31,10 @@ disable+ =
     unsupported-binary-operation,
     missing-timeout,
     c-extension-no-member,
+    unnecessary-lambda-assignment,
+    no-name-in-module,
+    
+
 
 [BASIC]
 attr-rgx = [a-z_][a-z0-9_]{2,40}$
