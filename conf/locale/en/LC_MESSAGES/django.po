@@ -11545,7 +11545,7 @@ msgstr ""
 
 #: cms/djangoapps/contentstore/views/component.py
 msgid "Library Content"
-msgstr "Library"
+msgstr ""
 
 #: cms/djangoapps/contentstore/views/component.py
 msgid "Blank"

@@ -13516,7 +13516,7 @@ msgstr "Respuesta Abierta"
 
 #: cms/djangoapps/contentstore/views/component.py
 msgid "Library Content"
-msgstr "Librerías"
+msgstr "Contenido de librerías"
 
 #: cms/djangoapps/contentstore/views/component.py
 msgid "Blank"
