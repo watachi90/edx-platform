@@ -1,73 +1,76 @@
 // Open edX: LMS footer
 // ====================
 
+$color_1: white;
+$color_2: #00acd7;
+$background-color_1: lightgray;
+$background-color_2: white;
+$background-color_3: #00acd7;
+
 .wrapper-footer {
-  box-shadow: 0 -1px 5px 0 $shadow-l1;
-  border-top: 1px solid $navbar-light-disabled-color;
-  background-color: $body-bg;
-  margin-top: $baseline/2;
-  padding: $baseline;
-  font-family: $font-family-sans-serif;
-
-  footer {
-    max-width: map-get($container-max-widths, xl);
-    margin: 0 auto;
-
-    .site-nav {
-      padding: 0;
-      margin-bottom: $baseline;
-
-      .nav-item {
-        margin-right: $baseline;
-
-        .nav-link {
-          text-decoration: none;
-          padding: 0;
-          color: $gray-900;
-
-          &:hover {
-            color: theme-color("primary");
-          }
-        }
-      }
-    }
-    .wrapper-logo {
-      img {
-        height: $header-logo-height * 1.05;
-      }
-    }
-
-    .legal-nav {
-      padding: 0;
-
-      .nav-item {
-        .nav-link {
-          text-decoration: none;
-          padding: 0;
-          margin-right: $baseline/4;
-          font-size: 0.8em;
-        }
-      }
-
-      li:not(:first-child) a::before {
-        content: "- ";
-      }
-    }
-
-    .footer-language-selector {
-      margin: $baseline 0;
-    }
-
-    .copyright {
-      @include text-align(left);
-
-      margin: -2px 0 8px;
-      font-size: 0.8em;
-      color: $gray;
-    }
-
-    .footer-about-openedx {
-      float: right;
-    }
-  }
+	box-shadow: none;
+	padding: 50px 0px;
+	background-color: $background-color_1;
+	background-image: url('/static/images/bgfoot.png');
+	.last-col {
+		text-align: center;
+		border-left: solid white 1px;
+		padding-left: 24px;
+		text-align: left;
+	}
+	footer {
+		.row {
+			display: flex;
+			justify-content: space-evenly;
+			padding-bottom: 35px;
+			ul {
+				list-style: none;
+			}
+		}
+		b {
+			color: $color_1;
+			margin-bottom: 6px;
+			display: inline-block;
+		}
+		a {
+			color: $color_1;
+			&:visited {
+				color: $color_1;
+			}
+		}
+		li {
+			>a {
+				margin: 6px 3px;
+				display: inline-block;
+			}
+		}
+		.social {
+			display: flex;
+			a {
+				color: $color_2;
+				background-color: $background-color_2;
+				border-radius: 5px;
+				height: 44px;
+				width: 44px;
+				font-size: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 9px;
+				&:hover {
+					color: $color_1;
+					background-color: $background-color_3;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.copyright {
+		color: $color_1;
+		margin-top: 50px;
+		text-align: center;
+	}
+	.social-wrapper {
+		text-align: center;
+	}
 }
