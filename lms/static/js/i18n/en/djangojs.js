@@ -128,3 +128,4 @@
   }
 };
 
+console.log("prueba de carga djangojs.js");
