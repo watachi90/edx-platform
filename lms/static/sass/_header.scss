@@ -9,7 +9,8 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 0;
-  border-bottom: 1px solid theme-color("primary");
+  //border-bottom: 1px solid theme-color("primary");
+  border-bottom: solid 4px #3fa9f5;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
   background: #303030;
   line-height: 1.5;
@@ -25,14 +26,14 @@
 
     a {
       @include float(left);
-      @include margin($baseline*0.75, 0, 0, $baseline*2);
+      //@include margin($baseline*0.75, 0, 0, $baseline*2);
 
       display: block;
 
       .logo {
         @include float(left);
 
-        height: $header-logo-height;
+        //height: $header-logo-height;
       }
 
       @include media-breakpoint-down(md) {

@@ -3,20 +3,171 @@
 @import '../base/grid-settings';
 @import 'neat/neat'; // lib - Neat
 $background-color_1: lightgray;
+$small: 768px;
 .wrapper-footer {
   @extend %ui-print-excluded;
 
-  box-shadow: 0 -1px 5px 0 $shadow-l1;
+  // box-shadow: 0 -1px 5px 0 $shadow-l1;
   border-top: 1px solid tint($m-gray, 50%);
-  padding: 25px ($baseline/2) ($baseline*1.5) ($baseline/2);
-  background: $body-bg;
+  //padding: 25px ($baseline/2) ($baseline*1.5) ($baseline/2);
+  //background: $body-bg;
   clear: both;
-
   box-shadow: none;
 	padding: 50px 0px;
 	background-color: $background-color_1;
 	background-image: url('/static/images/bgfoot.png');
-
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  box-shadow: none;
+  color: white;
+  .copyright {
+    margin: 0 auto;
+    //font-size: em(11);
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .social-wrapper{
+    text-align: center;
+  }
+  .social{
+    display: flex;
+    span{
+      color: #00acd7;
+      &:hover{
+        color: white;
+      }
+    }
+    a{
+      color: #00acd7;
+      background-color: white;
+      border-radius: 5px;
+      height: 44px;
+      width: 44px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 9px;
+      &:hover{
+        color: white;
+        background-color: #00acd7;
+        text-decoration: none;
+      }
+    }
+  }
+  .list-unstyled{
+    list-style: none;
+    b{
+      margin-bottom: 15px;
+      display: block;
+    }
+  }
+  .last-col{
+    border-left: solid white 1px;
+    padding-left: 24px;
+    text-align: left;
+    p{
+      color: white;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+  footer{
+    .row{
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 35px;
+    }
+    .mailing{
+      margin-top: 12px;
+    }
+  }
+  footer.primary {
+    width: 100%;
+    margin: 0 auto;
+    //color: #333;
+    &:after {
+      content: "";
+      display: table;
+      clear: both; 
+    }
+    .footer-content-primary{
+      &:after{
+        content: "";
+        display: table;
+        clear: both 
+      }
+    }
+    .colophon{
+      width: 31.91489%;
+      float: left;
+      margin-right: 14.28571%;
+    }
+    a{
+      color: white;
+      line-height: 1.3rem;
+      &:hover{
+        color: white !important;
+      }
+    }
+    .nav-peripheral{
+      width: 48.93617%;
+      float: right;
+      text-align: right;
+      .nav-item{
+        display: inline-block;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a{
+          border-radius: 2px;
+          padding: 10px 10px;
+          background: transparent;
+          .icon{
+            transition: top 0.25s ease-in-out 0.25s;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .footer-content-secondary{
+      margin-top: 20px;
+      &:after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+    .footer-about-copyright{
+      display: inline-block;
+      vertical-align: middle;
+      width: 31.91489%;
+      float: left;
+      margin-right: 14.28571%;
+    }
+    .footer-about-openedx{
+      display: inline-block;
+      vertical-align: middle;
+      a{
+        display: inline-block;
+        img{
+          display: block;
+          width: 120px;
+          margin-left: 10px;
+        }
+        &:hover{
+          border-bottom: none;
+        }
+      }
+    }
+  }
   footer#footer-openedx {
     @include clearfix();
 
@@ -44,7 +195,7 @@ $background-color_1: lightgray;
       color: $link-color;
       text-decoration: none !important;
 
-      &:hover,
+      ::hover,
       &:focus,
       &:active {
         border-bottom: 1px dotted $link-color;
@@ -139,13 +290,7 @@ $background-color_1: lightgray;
       }
     }
 
-    .copyright {
-      margin: -2px 0 8px 0;
-      font-size: em(11);
-      color: $gray; // WCAG 2.0 AA requirements
-
-      @include text-align(left);
-    }
+    
 
     .nav-legal {
       @include clearfix();
@@ -261,6 +406,32 @@ $background-color_1: lightgray;
 
     .colophon-about img {
       margin-top: ($baseline*1.5);
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .wrapper-footer{
+    footer{
+      .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        .col-sm{
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          flex: 1;
+        }
+      }
+      .social{
+        justify-content: center;
+      }
+    }
+    .last-col{
+      text-align: center;
     }
   }
 }
