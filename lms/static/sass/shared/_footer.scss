@@ -14,8 +14,9 @@ $small: 768px;
   clear: both;
   box-shadow: none;
 	padding: 50px 0px;
-	background-color: $background-color_1;
-	background-image: url('/static/images/bgfoot.png');
+	/*background-color: $background-color_1;*/
+  background-color: #3fa9f5;
+	/*background-image: url('/static/images/bgfoot.png');*/
   background-size: cover;
   position: relative;
   width: 100%;
@@ -55,6 +56,9 @@ $small: 768px;
         color: white;
         background-color: #00acd7;
         text-decoration: none;
+        span{
+          color: white;
+        }
       }
     }
   }

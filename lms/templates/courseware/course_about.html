@@ -159,7 +159,7 @@ from six import string_types
     <div class="course-sidebar">
       <div class="course-summary">
 
-        <%include file="course_about_sidebar_header.html" />
+        
 
         <%block name="course_about_important_dates">
         <ol class="important-dates">
@@ -238,6 +238,9 @@ from six import string_types
           % endif
         </ol>
         </%block>
+
+        <%include file="course_about_sidebar_header.html" />
+        
     </div>
 
       ## For now, ocw links are the only thing that goes in additional resources
