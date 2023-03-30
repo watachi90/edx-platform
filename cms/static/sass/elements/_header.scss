@@ -8,7 +8,6 @@
   width: 100%;
   box-shadow: 0 1px 2px 0 $shadow-l1;
   margin: 0;
-  padding: 0 $baseline;
   background: $white;
 
   header.primary {
@@ -16,8 +15,7 @@
 
     @include clearfix();
 
-    max-width: $fg-max-width;
-    min-width: $fg-min-width;
+    max-width: 100%;
     width: flex-grid(12);
     margin: 0 auto;
   }
@@ -25,10 +23,6 @@
   // ====================
 
   // basic layout
-  .wrapper-l,
-  .wrapper-r {
-    background: $white;
-  }
 
   .wrapper-l {
     @include float(left);
@@ -83,31 +77,18 @@
       }
     }
 
-    .nav-item a {
-      color: $gray-d1;
-
-      &:hover {
-        color: $uxpl-blue-hover-active;
-      }
-    }
   }
 
   // basic layout - dropdowns
   .nav-dd {
     .title {
-      @extend %t-action2;
+      /* @extend %t-action2;
       @extend %ui-btn-dd-nav-primary;
 
-      @include transition(all $tmg-f2 ease-in-out 0s);
+      @include transition(all $tmg-f2 ease-in-out 0s); */
 
       .fa-caret-down {
-        opacity: 0.25;
-      }
-
-      &:hover {
-        .fa-caret-down {
-          opacity: 1;
-        }
+        color:white;
       }
 
       .nav-sub .nav-item {
@@ -124,13 +105,11 @@
 
   // specific elements - branding
   .branding {
-    padding: ($baseline*0.75) 0;
 
     a {
       display: block;
 
       img {
-        max-height: ($baseline*2);
         display: block;
       }
     }
@@ -326,23 +305,19 @@
       }
 
       .action-signup {
-        @include blue-button();
 
         @extend %t-action3;
         @extend %t-strong;
 
         padding: ($baseline/4) ($baseline/2);
-        text-transform: uppercase;
       }
 
       .action-signin {
-        @include white-button();
 
         @extend %t-action3;
         @extend %t-strong;
 
         padding: ($baseline/4) ($baseline/2);
-        text-transform: uppercase;
       }
     }
   }

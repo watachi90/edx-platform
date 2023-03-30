@@ -287,7 +287,7 @@
   // ====================
 
   // Course/Library tabs
-  #course-index-tabs {
+/*   #course-index-tabs {
     margin: 0;
     font-size: 1.4rem;
 
@@ -313,7 +313,7 @@
         display: inline-block;
       }
     }
-  }
+  } */
 
   // ELEM: course listings
   .courses-tab,
@@ -350,9 +350,8 @@
 
   .list-courses {
     border-radius: 3px;
-    border: 1px solid $gray-l2;
-    background: $white;
-    box-shadow: 0 1px 1px $shadow-l1;
+    border: 2px solid #3fa9f5;
+    background: #fff;
 
     li:last-child {
       margin-bottom: 0;
@@ -447,8 +446,8 @@
     box-sizing: border-box;
     width: flex-grid(9, 9);
     position: relative;
-    border-bottom: 1px solid $gray-l2;
-    padding: $baseline;
+    border-bottom: 1px solid #3fa9f5;
+    padding: 15px 0px 15px 15px;
 
     // STATE: hover/focus
     &:hover {
@@ -477,7 +476,7 @@
 
       @include margin(0, ($baseline*2), ($baseline/4), 0);
 
-      font-weight: 300;
+      color: #3fa9f5;
     }
 
     // course metadata
@@ -516,15 +515,18 @@
 
       @include text-align(right);
 
+      a{
+        color: white;
+        background-color: #3fa9f5;
+        padding: 15px 25px;
+        margin: 2px;
+        border-radius: 4px;
+        transition: 0.5s ease;
+      }
+
       .action {
         display: inline-block;
         vertical-align: middle;
-
-        @include margin-right($baseline/2);
-
-        &:last-child {
-          @include margin-right(0);
-        }
       }
 
       .button {
@@ -534,13 +536,12 @@
       // view live button
       .view-button {
         box-sizing: border-box;
-        padding: ($baseline/2);
       }
 
       // course re-run button
-      .action-rerun {
+      /* .action-rerun {
         margin-right: $baseline;
-      }
+      } */
     }
 
     // CASE: is processing

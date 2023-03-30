@@ -16,13 +16,12 @@
   width: 100%;
   box-shadow: 0 1px 2px 0 $shadow-l1;
   margin: 0;
-  padding: 0 $baseline;
   background: $white;
 
   header.primary {
     @include clearfix();
 
-    max-width: $studio-max-width;
+    max-width: 100%;
     width: flex-grid(12);
     margin: 0 auto;
   }
@@ -30,10 +29,6 @@
   // ====================
 
   // basic layout
-  .wrapper-l,
-  .wrapper-r {
-    background: $white;
-  }
 
   .wrapper-l {
     float: left;
@@ -84,30 +79,16 @@
         margin-right: 0;
       }
     }
-
-    .nav-item a {
-      color: color("gray");
-
-      &:hover {
-        color: $link-hover-color;
-      }
-    }
   }
 
   // basic layout - dropdowns
   .nav-dd {
     .title {
-      padding: $baseline/2 $baseline/2;
-      font-size: $font-size-lg;
+      /* padding: $baseline/2 $baseline/2;
+      font-size: $font-size-lg; */
 
       .fa-caret-down {
-        opacity: 0.25;
-      }
-
-      &:hover {
-        .fa-caret-down {
-          opacity: 1;
-        }
+        color: white;
       }
 
       .nav-sub .nav-item {
@@ -124,13 +105,11 @@
 
   // specific elements - branding
   .branding {
-    padding: ($baseline*0.75) 0;
 
     a {
       display: block;
 
       img {
-        max-height: ($baseline*2);
         display: block;
       }
     }
@@ -324,12 +303,10 @@
 
       .action-signup {
         padding: ($baseline/4) ($baseline/2);
-        text-transform: uppercase;
       }
 
       .action-signin {
         padding: ($baseline/4) ($baseline/2);
-        text-transform: uppercase;
       }
     }
   }

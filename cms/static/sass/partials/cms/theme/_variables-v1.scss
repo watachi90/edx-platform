@@ -303,3 +303,411 @@ $state-danger-bg: #f2dede !default;
 $state-danger-border: darken($state-danger-bg, 5%) !default;
 
 $text-dark-black-blue: #2c3e50;
+
+/***************ESTILOS PERSONALIZADOS*****************/
+
+.info-course .course-link{
+    font-weight: bold;
+}
+
+.howorks.section1{
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.howorks.section1 .welcome_log{
+    background-image: url("../images/head_bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 70px 0 100px 0;
+    color: #333;
+    font-size: 3em;
+}
+
+.howorks.section1 .infor p{
+    color: white !important;
+    font-size: 2.4em;
+}
+
+.howorks.section1 .inst-name{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.howorks.section3 ul li,
+.howorks.section3 h3{
+    color: white !important;
+}
+
+.howorks.section1 h3,
+.howorks.section2 h3,
+.howorks.section3 h3,
+.howorks.section4 h3{
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 35px 0;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.howorks.section1 .infor{
+    background-color: #38D6FD;
+    padding: 25px 0;
+}
+
+.howorks.section1 .infor p{
+    font-size: 1em;
+}
+
+.howorks.section2,
+.howorks.section3{
+    padding: 50px 0;
+}
+
+.howorks.section2 ul li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #00ABF8;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.howorks.section3 ul li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ACEAFE;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.howorks.section3{
+    background-color: #00ABF8;
+    color: white;
+}
+
+.howorks .d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howorks .caja{
+    padding: 70px;
+}
+
+.course-status #root.SFE .SFE-wrapper .col-5{
+    padding-left: 5px;
+}
+
+.mast.has-actions .wrapper_nuevos{
+    padding-top: 20px;
+}
+
+#root.SFE h3.font-weight-normal.font-extra-large,
+#root.SFE div.font-large{
+    color: white;
+}
+
+#root.SFE .table {
+    border: 1px solid #3fa9f5 !important;
+    margin-right: 20px;
+}
+
+#root.SFE .table td, #root.SFE .table th{
+    border-top: 1px solid #3fa9f5  !important;
+}
+
+#root.SFE .table thead th {
+    border-bottom: 1px solid #3fa9f5 !important;
+}
+
+#root.SFE .search-field {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#root.SFE .border.search-field{
+    border:1px solid #3fa9f5 !important;
+}
+
+#root.SFE .btn-outline-primary{
+    color: #3fa9f5 !important;
+    border-color: #3fa9f5 !important;
+}
+
+#root.SFE .btn-outline-primary:hover {
+    color: white !important;
+    background-color: #3fa9f5 !important;
+    border-color: #3fa9f5 !important;
+}
+
+.xblock.xblock-author_view.xblock-author_view-sequential.xmodule_display.xmodule_SequenceBlock.xblock-initialized{
+    min-width: 430px;
+}
+
+.action.action-upload-image{
+    border:none;
+}
+
+.new-component-type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.new-component-type .large-template-icon{
+    height: 40px;
+}
+
+.large-library-icon{
+    display: inline-block;
+    width: 60px;
+    background: url(../images/data.png) center no-repeat;
+    background-size: contain;
+}
+
+.view-howitworks.not-signedin .wrapper-header {
+    margin-bottom: 0;
+    background-color: #303030;
+}
+
+.wrapper-header .wrapper-l, .wrapper-header .wrapper-r{
+    background-color: transparent;
+}
+
+.not-signedin .wrapper-header .nav-pitch .action-signup, .view-util .wrapper-header .nav-pitch .action-signup,
+.not-signedin .wrapper-header .nav-pitch .action-signin, .view-util .wrapper-header .nav-pitch .action-signin {
+    background: #3fa9f5;
+    border-color: #3fa9f5;
+    color: #fff;
+    transition: all 0.5s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.not-signedin .wrapper-header .nav-pitch .action-signup:hover,
+.not-signedin .wrapper-header .nav-pitch .action-signup:focus,
+.not-signedin .wrapper-header .nav-pitch .action-signup:active,
+.view-util .wrapper-header .nav-pitch .action-signup:hover,
+.view-util .wrapper-header .nav-pitch .action-signup:focus,
+.view-util .wrapper-header .nav-pitch .action-signup:active {
+    background: #80D5FB;
+    border-color: #80D5FB;
+}
+
+.not-signedin .wrapper-header .nav-pitch .action-signin:hover,
+.not-signedin .wrapper-header .nav-pitch .action-signin:focus,
+.view-util .wrapper-header .nav-pitch .action-signin:hover,
+.view-util .wrapper-header .nav-pitch .action-signin:focus {
+    background: #80D5FB;
+    border-color: #80D5FB;
+}
+
+.wrapper-header nav .nav-item a {
+    color: white;
+}
+
+.wrapper-header nav .nav-item a:hover {
+    color: #3fa9f5;
+}
+
+.nav-item.nav-not-signedin-help a, .nav-item.nav-account-help a {
+    background: #3fa9f5;
+    border-color: #3fa9f5;
+    color: #fff;
+    transition: all 0.5s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-item.nav-not-signedin-help a:hover, .nav-item.nav-account-help a:hover {
+    background: #80D5FB;
+    border-color: #80D5FB;
+}
+
+.wrapper-header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-right: 20px;
+    border-bottom: 6px solid #00ABF8;
+}
+
+.view-howitworks.not-signedin .wrapper-header {
+    margin-bottom: 0;
+    background-color: #303030;
+}
+
+.wrapper-footer{
+    background: #303030;
+    background: -moz-linear-gradient(30deg, #303030 50%, #2e2e2e 50%);
+    background: -webkit-linear-gradient(30deg, #303030 50%,#2e2e2e 50%);
+    background: linear-gradient(30deg, #303030 50%,#2e2e2e 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#2e2e2e',GradientType=1 );
+}
+
+.wrapper-footer footer .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 35px;
+}
+
+.wrapper-footer .copyright {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.wrapper-footer footer b {
+    color: white;
+    margin-bottom: 6px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.wrapper-footer .last-col {
+    border-left: solid white 1px;
+    padding-left: 24px;
+    text-align: left;
+}
+
+.wrapper-footer footer.primary a {
+    color: white;
+    font-size: 1.2em;
+}
+
+.wrapper-footer footer .social {
+    display: flex;
+}
+
+.wrapper-footer footer .social a {
+    color: #00acd7;
+    background-color: white;
+    border-radius: 5px;
+    height: 44px;
+    width: 44px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 9px;
+    transition: all 0.5s ease;
+}
+
+.wrapper-footer footer .social a:hover {
+    color: white;
+    background-color: #00acd7;
+}
+
+.wrapper-footer footer.primary .footer-about-openedx a img {
+    display: block;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.wrapper-footer .last-col p {
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.wrapper-footer footer li>a {
+    margin: 6px 3px;
+    display: block;
+}
+
+.is-signedin .wrapper {
+    background-color: #303030;
+}
+
+.wrapper-mast .mast.has-actions .nav-actions .button.new-button {
+    background-color: #3fa9f5;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.wrapper-mast .mast.has-actions .nav-actions .button.new-button:hover {
+    background-color: #80D5FB;
+}
+
+.view-dashboard #course-index-tabs{
+    margin-bottom: 0;
+    display: flex;
+}
+
+.view-dashboard #course-index-tabs li.active {
+    background-color: #3fa9f5;
+}
+
+.view-dashboard #course-index-tabs li:first-of-type {
+    border-top-left-radius: 4px;
+}
+
+.view-dashboard #course-index-tabs li {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 15px;
+    background-color: #8c8c8c;
+}
+
+.view-dashboard #course-index-tabs li a {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+}
+
+.view-dashboard #course-index-tabs li:last-of-type {
+    border-top-right-radius: 4px;
+}
+
+.wrapper-header nav>ol>.nav-item .title {
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover,
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover .fa-caret-down,
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active,
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active .fa-caret-down {
+    background: #fff;
+    color: #3fa9f5 !important;
+}
+
+.wrapper-header .nav-dd .title {
+    padding: 5px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    font-size: 1.6rem;
+    transition: 0.5s all ease;
+}
+
+.view-dashboard .content-supplementary ol li a, .view-dashboard .content-supplementary .new-course-button, .view-dashboard .content-supplementary .new-library-button {
+    background-color: #3fa9f5;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.view-dashboard .content-supplementary ol{
+    margin-top: 40px;
+    text-align: center;
+}

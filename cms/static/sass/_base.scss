@@ -79,10 +79,9 @@ h1 {
 // ====================
 .page-header {
   @extend %t-title3;
-  @extend %t-strong;
 
   display: block;
-  color: $gray-d3;
+  color: white;
 
   .navigation,
   .subtitle {
@@ -270,7 +269,7 @@ dl {
   }
 
   .mast {
-    border-bottom: 1px solid $gray-l4;
+    border-bottom: 1px solid #3fa9f5;
     padding-bottom: ($baseline/2);
 
     // layout with actions

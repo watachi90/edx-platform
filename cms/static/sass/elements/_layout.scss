@@ -8,6 +8,7 @@
   margin: ($baseline*1.5) 0 0 0;
   padding: 0 $baseline;
   position: relative;
+  background-color: #303030;
 
   .mast,
   .metadata {
@@ -22,7 +23,7 @@
   }
 
   .mast {
-    border-bottom: 1px solid $gray-l4;
+    border-bottom: 1px solid #3fa9f5;
     padding-bottom: ($baseline/2);
 
     // layout without actions
@@ -79,11 +80,11 @@
           }
 
           // CASE: new/create button
-          &.new-button,
+          /* &.new-button,
           &.button-new {
             @extend %btn-primary-green;
             @extend %sizing;
-          }
+          } */
         }
       }
     }

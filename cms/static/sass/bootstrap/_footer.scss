@@ -9,8 +9,7 @@
 .wrapper-footer {
   position: relative;
   width: 100%;
-  margin: 0 0 $baseline 0;
-  padding: $baseline;
+  padding: 50px 40px;
 
   footer.primary {
     @extend %t-copy-sub2;
@@ -20,7 +19,6 @@
     max-width: $studio-max-width;
     width: flex-grid(12);
     margin: 0 auto;
-    color: $gray-500;
 
     .footer-content-primary {
       @include clearfix();
@@ -80,8 +78,8 @@
 
     // platform Open edX logo and link
     .footer-about-openedx {
-      float: right;
-      text-align: right;
+      display: inline-block;
+      vertical-align: middle;
 
       a {
         display: inline-block;
