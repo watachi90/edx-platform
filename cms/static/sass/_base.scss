@@ -270,7 +270,7 @@ dl {
 
   .mast {
     border-bottom: 1px solid #3fa9f5;
-    padding-bottom: ($baseline/2);
+    padding-bottom: 25px;
 
     // layout with actions
     .page-header {
@@ -279,7 +279,9 @@ dl {
 
     // layout with actions
     &.has-actions {
-      @include clearfix();
+      display: flex;
+      justify-content: space-between;
+
 
       .page-header {
         @include float(left);
@@ -289,12 +291,8 @@ dl {
       }
 
       .nav-actions {
-        @include float(left);
-        @include text-align(right);
-
-        position: relative;
-        bottom: -($baseline*0.75);
-        width: flex-grid(6, 12);
+        display: flex;
+        align-items: center;
 
         .nav-item {
           display: inline-block;
@@ -314,18 +312,9 @@ dl {
       }
     }
 
-    // layout with actions
-    &.has-subtitle {
-      .nav-actions {
-        bottom: -($baseline*1.5);
-      }
-    }
 
     // layout with navigation
     &.has-navigation {
-      .nav-actions {
-        bottom: -($baseline*1.5);
-      }
 
       .navigation-link {
         @extend %cont-truncated;

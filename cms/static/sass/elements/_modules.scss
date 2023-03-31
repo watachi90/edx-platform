@@ -120,7 +120,7 @@
       @extend %t-strong;
 
       margin-bottom: ($baseline*0.75);
-      color: $uxpl-green-base;
+      color: white;
     }
 
     // add component - list of green buttons
@@ -343,6 +343,9 @@ $outline-indent-width: $baseline;
 
       padding: ($baseline/2) $baseline;
       display: block;
+      background-color: #3fa9f5;
+      border: none !important;
+      color: white !important;
 
       .icon {
         display: inline-block;
@@ -565,7 +568,7 @@ $outline-indent-width: $baseline;
 
     margin-bottom: ($baseline/2);
     border: 1px solid $gray-l4;
-    border-left: ($baseline/4) solid $color-draft;
+    border-left: 15px solid $color-draft;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: ($baseline*0.75);

@@ -44,14 +44,6 @@
       }
 
       .nav-actions {
-        position: relative;
-        bottom: -($baseline*0.75);
-
-        @include float(right);
-
-        width: flex-grid(6, 12);
-
-        @include text-align(right);
 
         .nav-item {
           display: inline-block;
@@ -86,13 +78,6 @@
             @extend %sizing;
           } */
         }
-      }
-    }
-
-    // layout with actions
-    &.has-subtitle {
-      .nav-actions {
-        bottom: -($baseline*1.5);
       }
     }
 

@@ -155,10 +155,10 @@
     // entire link
     .course-link {
       display: block;
-      color: theme-color("primary");
+      color: white;
 
       &:hover {
-        color: $link-hover-color;
+        color: #3fa9f5;
       }
     }
   }
@@ -266,9 +266,6 @@
       margin-right: 2%;
     }
 
-    .nav-course {
-      width: 45%;
-    }
   }
 }
 

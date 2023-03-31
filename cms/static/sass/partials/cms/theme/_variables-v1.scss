@@ -41,7 +41,7 @@ $transparent: rgba(0, 0, 0, 0) !default; // used when color value is needed for 
 
 // +Colors - UXPL new pattern library colors
 // ====================
-$uxpl-blue-hover-active: rgb(6, 86, 131) !default; // wcag2a compliant
+$uxpl-blue-hover-active: rgb(128, 213, 251) !default; // wcag2a compliant
 $uxpl-light-blue-base: rgb(242, 248, 251) !default;
 
 $uxpl-green-base: rgb(0, 129, 0) !default; // wcag2a compliant
@@ -96,7 +96,7 @@ $btn-lms-background-hover: #e4e4e4 !default;
 $btn-lms-gradient-hover: #d1c9c9 !default;
 $btn-lms-shadow-active: #cac2c2 !default;
 
-$blue: rgb(0, 159, 230) !default;
+$blue: rgb(63, 169, 245) !default;
 $blue-l1: tint($blue, 20%) !default;
 $blue-l2: tint($blue, 40%) !default;
 $blue-l3: tint($blue, 60%) !default;
@@ -237,10 +237,10 @@ $tmg-f3: 0.125s;
 
 // +Archetype UI
 // ====================
-$ui-action-primary-color: $blue-u2 !default;
+$ui-action-primary-color: $blue !default;
 $ui-action-primary-color-focus: $blue-s1 !default;
 
-$ui-link-color: $blue-u2 !default;
+$ui-link-color: $blue !default;
 $ui-link-color-focus: $blue-s1 !default;
 $link-color: $ui-link-color;
 
@@ -277,7 +277,7 @@ $sidebar-color: rgb(246, 246, 246) !default;
 $body-line-height: golden-ratio(0.875em, 1);
 
 // carried over from LMS for xmodules
-$action-primary-active-bg: #1aa1de !default; // $m-blue
+$action-primary-active-bg: rgb(63, 169, 245) !default; // $m-blue
 $very-light-text: $white !default;
 
 $color-background-alternate: rgb(242, 248, 251) !default;
@@ -638,8 +638,8 @@ $text-dark-black-blue: #2c3e50;
     font-size: 1em;
 }
 
-.wrapper-mast .mast.has-actions .nav-actions .button.new-button:hover {
-    background-color: #80D5FB;
+.wrapper-mast .mast.has-actions .nav-actions .button:hover {
+    background-color: #80D5FB !important;
 }
 
 .view-dashboard #course-index-tabs{
@@ -680,10 +680,13 @@ $text-dark-black-blue: #2c3e50;
 }
 
 .wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover,
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover .fa-caret-down,
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active,
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active .fa-caret-down {
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active {
     background: #fff;
+    color: #3fa9f5 !important;
+}
+
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover .fa-caret-down,
+.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active .fa-caret-down {
     color: #3fa9f5 !important;
 }
 
@@ -710,4 +713,200 @@ $text-dark-black-blue: #2c3e50;
 .view-dashboard .content-supplementary ol{
     margin-top: 40px;
     text-align: center;
+}
+
+body.course.view-outline .nav-course-courseware .title {
+    color: white !important;
+}
+
+body.course.view-outline .nav-course-courseware .title:hover {
+    color: #3fa9f5 !important;
+}
+
+.course-status #root.SFE .SFE-wrapper>.row>div {
+    border-right: 1px solid #3fa9f5;
+    margin-right: 15px;
+}
+
+.view-outline .course-status #root.SFE .SFE-wrapper {
+    background-color: #4c4c4c;
+}
+
+.view-outline .course-status #root.SFE .SFE-wrapper .status-label{
+    color: white;
+}
+
+#root.SFE .status-value,
+#root.SFE .status-value .status-link {
+    color: #3fa9f5 !important;
+}
+
+.wrapper-mast .mast.has-actions .nav-actions .button,
+.view-outline .course-status .status-highlights-enabled-value.button{
+    background: #3fa9f5 !important;
+    border-color: #3fa9f5 !important;
+    color: white !important;
+}
+
+.view-outline .course-status .status-highlights-enabled-value.button:hover{
+    background: $uxpl-blue-hover-active !important;
+}
+
+.view-outline .highlights-button{
+    color: #3fa9f5 !important;
+}
+
+.view-outline .number-highlights,
+.view-group-configurations .content-primary .no-content .button{
+    background-color: #3fa9f5 !important;
+    border: none !important;
+}
+
+
+.view-outline .course-status .status-highlights-enabled-info{
+    background: #3fa9f5 !important;
+    color: white !important;
+    padding: 3px 8px;
+    margin-top: 2px;
+    font-size: 0.7em;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.view-outline .course-status .status-highlights-enabled-label{
+    color: white !important;
+}
+
+.view-outline .course-status .status-highlights-enabled-info:hover {
+    background: $uxpl-blue-hover-active !important;
+    color: white;
+}
+
+.wrapper-mast .mast.has-actions .nav-actions .nav-item a {
+    font-size: 1em !important;
+}
+
+.bit .external-help-button{
+    background-color: #3fa9f5 !important;
+    color: white !important;
+}
+
+.bit .external-help-button:hover,
+.view-group-configurations .content-primary .no-content .button:hover{
+    background-color: $uxpl-blue-hover-active !important;
+}
+
+.outline-complex .outline-subsection.is-live {
+    border-left-color: #ed6c4d !important;
+}
+
+.view-outline .outline-complex .outline-section {
+    padding: 15px 20px 15px 24px;
+    border: 4px solid #3fa9f5;
+}
+
+.view-outline .outline-complex .outline-section .section-header-actions .actions-list .action-item .action-button:hover,
+.view-outline .outline-complex .outline-subsection .subsection-header-actions .actions-list .action-item .action-button:hover{
+    background-color: $uxpl-blue-hover-active !important;
+    color: #f9f9f9 !important;
+}
+
+.outline-complex .outline-section .section-header-actions .actions-list .action-item .action-button,
+.view-outline .outline-complex .outline-subsection .subsection-header-actions .actions-list .action-item .action-button{
+    transition: all 0.125s linear 0s;
+    display: block;
+    border-radius: 3px;
+    padding: 3px 10px;
+    color: #3fa9f5 !important;
+    font-size: 1.5em;
+    border: none;
+}
+
+.introduction .copy{
+    color: white;
+}
+
+.course-updates .post-actions .edit-button,
+.course-updates .post-actions .delete-button,
+.course-handouts .edit-button,
+.view-import .action-choose-file,
+.view-export .export-controls .action-export,
+.add-xblock-component .new-component .new-component-type .add-xblock-component-button{
+    background-color: #3fa9f5 !important;
+    border: none !important;
+    color: white;
+    border-radius: 5px;
+}
+
+.course-updates .post-actions .edit-button:hover,
+.course-updates .post-actions .delete-button:hover,
+.course-handouts .edit-button:hover,
+.view-import .action-choose-file:hover,
+.add-xblock-component .new-component .new-component-type .add-xblock-component-button:hover{
+    background-color: $uxpl-blue-hover-active !important;
+}
+
+body.course.view-updates .nav-course-courseware .title,
+.view-group-configurations .content-primary .wrapper-groups .title,
+.introduction p,
+.export-contents,
+.jump-nav .nav-item .title:hover, .jump-nav .nav-item .title:active,
+.jump-nav .nav-item .title:hover, .jump-nav .nav-item .title,
+.incontext-editor.is-editable .incontext-editor-value,
+.jump-nav .nav-item .spacer{
+    color: white !important;
+}
+
+body.course.view-updates .nav-course-courseware .title:hover{
+    color: #3fa9f5 !important;
+}
+
+.bit .nav-item a{
+    color: #3fa9f5;
+}
+
+.view-checklists #root.SFE .SFE-wrapper{
+    background-color: transparent;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav-button,
+.xmodule_display.xmodule_SequenceBlock .sequence-nav ol li{
+    background-color: #3fa9f5 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav button:hover,
+.xmodule_display.xmodule_SequenceBlock .sequence-nav ol li:hover button,
+.xmodule_display.xmodule_SequenceBlock .sequence-nav button.active{
+    border-bottom: 3px solid #80D5FB !important;
+    background-color: #3fa9f5 !important;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav-button.button-previous {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    border: none;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav-button.button-next {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    border: none !important;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav{
+    height: 40px !important;
+    background-color: transparent;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav ol li button .icon,
+.xmodule_display.xmodule_SequenceBlock .sequence-nav button:hover .icon{
+    color: white !important;
+}
+
+.xmodule_display.xmodule_SequenceBlock .sequence-nav ol li button{
+    height: 40px !important;
+    color: white;
+    border-bottom: 3px solid #3fa9f5 !important;
 }

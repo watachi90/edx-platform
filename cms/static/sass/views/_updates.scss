@@ -172,7 +172,6 @@
 
     .edit-button,
     .delete-button {
-      @include white-button();
 
       @extend %t-action4;
       @extend %t-regular;
@@ -209,7 +208,6 @@
   }
 
   .edit-button {
-    @include white-button;
 
     @extend %t-action4;
     @extend %t-regular;

@@ -149,10 +149,11 @@ nav {
 
       a {
         display: block;
+        color: #3fa9f5;
 
         &:hover,
         &:active {
-          color: theme-color("primary");
+          color: #3fa9f5;
         }
       }
     }
@@ -264,7 +265,7 @@ $seq-nav-height: 40px;
   position: relative;
   border-bottom: none;
   z-index: 0;
-  height: $seq-nav-height;
+  height: 40px;
   display: flex;
   justify-content: center;
 
@@ -406,23 +407,7 @@ $seq-nav-height: 40px;
 }
 
 .sequence-nav-button {
-  @extend %ui-depth3;
 
-  display: block;
-  top: 0;
-  min-width: 40px;
-  max-width: 40px;
-  height: 100%;
-  text-shadow: none; // overrides default button text-shadow
-  background: none;  // overrides default button gradient
-  background-color: theme-color("inverse");
-  border-color: $seq-nav-border-color;
-  box-shadow: none;
-  font-size: inherit;
-  font-weight: normal;
-  padding: 0;
-  white-space: nowrap;
-  overflow-x: hidden;
 
   @include media-breakpoint-up(md) {
     min-width: 120px;

@@ -182,6 +182,8 @@
   // --------------------
   .course-status {
     margin-bottom: $baseline;
+    background-color: #4c4c4c;
+    padding: 6px;
 
     .status-release,
     .status-highlights-enabled,
@@ -556,6 +558,7 @@
 
         padding: ($baseline/2) $baseline;
         display: block;
+        background-color: #3fa9f5;
 
         .icon {
           display: inline-block;

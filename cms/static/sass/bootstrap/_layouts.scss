@@ -78,7 +78,7 @@
 
   .mast {
     border-bottom: 1px solid #3fa9f5;
-    padding-bottom: ($baseline/2);
+    padding-bottom: 25px;
 
     // layout without actions
     .page-header {
@@ -102,11 +102,7 @@
       }
 
       .nav-actions {
-        position: relative;
-        bottom: -($baseline*0.75);
-        float: right;
-        width: flex-grid(6, 12);
-        text-align: right;
+        
 
         .nav-item {
           display: inline-block;
@@ -143,18 +139,8 @@
       }
     }
 
-    // layout with actions
-    &.has-subtitle {
-      .nav-actions {
-        bottom: -($baseline*1.5);
-      }
-    }
-
     // layout with breadcrumb navigation
     &.has-navigation {
-      .nav-actions {
-        bottom: -($baseline*1.5);
-      }
 
       .navigation-item {
         @extend %cont-truncated;
