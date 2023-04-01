@@ -24,3 +24,57 @@
         }
     }
 }
+
+
+
+.wrapper-course-material .course-tabs .tab a:hover, 
+.wrapper-course-material .course-tabs .tab a:focus, 
+.wrapper-course-material .course-tabs .tab a.active, 
+.wrapper-course-material .course-tabs .tab a:visited:hover, 
+.wrapper-course-material .course-tabs .tab a:visited:focus, 
+.wrapper-course-material .course-tabs .tab a:visited.active {
+    background-color: #ed6c4d;
+}
+
+.wrapper-course-material .course-material {
+    border-bottom: 2px solid #ed6c4d;
+}
+
+.wrapper-course-material .course-tabs .tab {
+    list-style: none;
+    background-color: lightgray;
+    margin-right: 1px;
+}
+
+header.global-header {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    overflow: visible;
+    border-bottom: solid 4px #3fa9f5;
+}
+
+.global-header .header-logo .course-header {
+    display: block;
+    color: white;
+}
+
+.user-border-es {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #3fa9f5;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.user-border-es:hover {
+    background-color: #80d5fb;
+    border-color: #80d5fb;
+}
+
+.global-header .nav-links .secondary .nav-item .help-link {
+    background-color: #3fa9f5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
