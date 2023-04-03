@@ -518,26 +518,28 @@ $text-dark-black-blue: #2c3e50;
     color: #3fa9f5;
 }
 
-.nav-item.nav-not-signedin-help a, .nav-item.nav-account-help a {
+/* .nav-item.nav-not-signedin-help a, .nav-item.nav-account-help a {
     background: #3fa9f5;
     border-color: #3fa9f5;
     color: #fff;
     transition: all 0.5s ease;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 50%;
 }
 
 .nav-item.nav-not-signedin-help a:hover, .nav-item.nav-account-help a:hover {
     background: #80D5FB;
     border-color: #80D5FB;
+} */
+
+.wrapper-header nav .nav-item a:active,
+.wrapper-header nav .nav-item a:focus{
+    outline: none !important;
 }
 
-.wrapper-header {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding-right: 20px;
-    border-bottom: 6px solid #00ABF8;
+.wrapper-header nav .nav-item a img {
+    width: 30px;
+    display: flex;
 }
 
 .view-howitworks.not-signedin .wrapper-header {
@@ -546,11 +548,11 @@ $text-dark-black-blue: #2c3e50;
 }
 
 .wrapper-footer{
-    background: #303030;
-    background: -moz-linear-gradient(30deg, #303030 50%, #2e2e2e 50%);
-    background: -webkit-linear-gradient(30deg, #303030 50%,#2e2e2e 50%);
-    background: linear-gradient(30deg, #303030 50%,#2e2e2e 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#2e2e2e',GradientType=1 );
+    background: #285B83;
+    background: -moz-linear-gradient(30deg, #285B83 50%, #2c628a 50%);
+    background: -webkit-linear-gradient(30deg, #285B83 50%,#285B83 50%);
+    background: linear-gradient(30deg, #285B83 50%,#2c628a 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#285B83', endColorstr='#2c628a',GradientType=1 );
 }
 
 .wrapper-footer footer .row {
@@ -679,14 +681,18 @@ $text-dark-black-blue: #2c3e50;
     border-radius: 5px;
 }
 
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover,
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active {
+.wrapper-header nav>ol>.nav-item .title:hover{
+    color: #80D5FB;
+}
+
+.wrapper-header .nav-dd .nav-account-user .title:hover, .wrapper-header .nav-dd .nav-account-user .title:hover,
+.wrapper-header .nav-dd .nav-account-user .title:hover, .wrapper-header .nav-dd .nav-account-user .title:active {
     background: #fff;
     color: #3fa9f5 !important;
 }
 
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:hover .fa-caret-down,
-.wrapper-header .nav-dd .title:hover, .wrapper-header .nav-dd .title:active .fa-caret-down {
+.wrapper-header .nav-dd .nav-account-user .title:hover, .wrapper-header .nav-dd .nav-account-user .title:hover .fa-caret-down,
+.wrapper-header .nav-dd .nav-account-user .title:hover, .wrapper-header .nav-dd .nav-account-user .title:active .fa-caret-down {
     color: #3fa9f5 !important;
 }
 
@@ -700,7 +706,9 @@ $text-dark-black-blue: #2c3e50;
     transition: 0.5s all ease;
 }
 
-.view-dashboard .content-supplementary ol li a, .view-dashboard .content-supplementary .new-course-button, .view-dashboard .content-supplementary .new-library-button {
+.view-dashboard .content-supplementary ol li a, 
+.view-dashboard .content-supplementary .new-course-button, 
+.view-dashboard .content-supplementary .new-library-button {
     background-color: #3fa9f5;
     color: white;
     border-radius: 4px;
@@ -710,17 +718,15 @@ $text-dark-black-blue: #2c3e50;
     font-size: 16px;
 }
 
+.view-dashboard .content-supplementary ol li a:hover, 
+.view-dashboard .content-supplementary .new-course-button:hover, 
+.view-dashboard .content-supplementary .new-library-button:hover {
+    background-color: #80D5FB;
+}
+
 .view-dashboard .content-supplementary ol{
     margin-top: 40px;
     text-align: center;
-}
-
-body.course.view-outline .nav-course-courseware .title {
-    color: white !important;
-}
-
-body.course.view-outline .nav-course-courseware .title:hover {
-    color: #3fa9f5 !important;
 }
 
 .course-status #root.SFE .SFE-wrapper>.row>div {
@@ -846,21 +852,6 @@ body.course.view-outline .nav-course-courseware .title:hover {
     background-color: $uxpl-blue-hover-active !important;
 }
 
-body.course.view-updates .nav-course-courseware .title,
-.view-group-configurations .content-primary .wrapper-groups .title,
-.introduction p,
-.export-contents,
-.jump-nav .nav-item .title:hover, .jump-nav .nav-item .title:active,
-.jump-nav .nav-item .title:hover, .jump-nav .nav-item .title,
-.incontext-editor.is-editable .incontext-editor-value,
-.jump-nav .nav-item .spacer{
-    color: white !important;
-}
-
-body.course.view-updates .nav-course-courseware .title:hover{
-    color: #3fa9f5 !important;
-}
-
 .bit .nav-item a{
     color: #3fa9f5;
 }
@@ -880,7 +871,7 @@ body.course.view-updates .nav-course-courseware .title:hover{
 .xmodule_display.xmodule_SequenceBlock .sequence-nav ol li:hover button,
 .xmodule_display.xmodule_SequenceBlock .sequence-nav button.active{
     border-bottom: 3px solid #80D5FB !important;
-    background-color: #3fa9f5 !important;
+    background-color: #80D5FB !important;
 }
 
 .xmodule_display.xmodule_SequenceBlock .sequence-nav-button.button-previous {

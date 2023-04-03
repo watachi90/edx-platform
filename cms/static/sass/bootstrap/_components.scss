@@ -82,7 +82,7 @@
       }
 
       &:hover {
-        background: theme-color("primary");
+        background: #3fa9f5;
         color: theme-color("inverse");
       }
     }
@@ -158,7 +158,8 @@
         }
 
         .action-primary {
-          @extend %btn-primary-blue;
+          background-color: #3fa9f5;
+          border-color: #3fa9f5;
           @extend %t-action3;
         }
       }

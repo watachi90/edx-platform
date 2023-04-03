@@ -38,7 +38,7 @@
       .page-header {
         @include float(left);
 
-        width: flex-grid(6, 12);
+        width: 40%;
 
         @include margin-right(flex-gutter());
       }
