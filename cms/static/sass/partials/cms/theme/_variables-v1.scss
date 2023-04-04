@@ -828,8 +828,10 @@ $text-dark-black-blue: #2c3e50;
     border: none;
 }
 
-.introduction .copy{
-    color: white;
+.export-contents,
+.export-contents ul li,
+.introduction p{
+    color: white !important;
 }
 
 .course-updates .post-actions .edit-button,
@@ -900,4 +902,8 @@ $text-dark-black-blue: #2c3e50;
     height: 40px !important;
     color: white;
     border-bottom: 3px solid #3fa9f5 !important;
+}
+
+.page-header .subtitle{
+    display: none !important;
 }
