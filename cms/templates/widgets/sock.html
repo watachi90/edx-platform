@@ -1,9 +1,15 @@
 <%page expression_filter="h" args="online_help_token" />
+<%namespace name='static' file='../static_content.html'/>
 <%!
 from django.conf import settings
 from django.utils.translation import gettext as _
 %>
 <%namespace file="sock_links.html" import="get_sock_links" />
+<link rel="stylesheet" href="${static.url('css/qc.slider.css')}">
+
+<link rel="stylesheet" href="${static.url('css/qc.slider.css')}">
+<script src="${static.url('js/utils/qcslider.jquery.js')}"></script>
+
 
 <div class="wrapper-sock wrapper">
   <ul class="list-actions list-cta">
@@ -18,7 +24,7 @@ from django.utils.translation import gettext as _
   <div class="wrapper-inner wrapper">
     <section class="sock" id="sock" aria-labelledby="sock-heading">
       <h2 id="sock-heading" class="title sr-only">${_("{studio_name} Documentation").format(studio_name=settings.STUDIO_NAME)}</h2>
-      <%
+      <!-- <%
         links = get_sock_links()
       %>
       <div class="support">
@@ -32,7 +38,33 @@ from django.utils.translation import gettext as _
             %endif
           % endfor
         </ul>
-      </div>
+      </div> -->
+
+      <section class="slide">
+        <div class="slider-container">
+          <ul class="slider-wrapper" id="slider">
+            <!-- HTML5 Video -->
+            <li class="video" data-type="video" data-video="${static.url('images/video-images/FULL_Blue_compress.mp4')}" data-muted="true"></li>
+            <li class="video" data-type="video" data-video="${static.url('images/video-images/FULL_Orange_compress.mp4')}" data-muted="true"></li>
+          </ul>
+          <!-- Nav controls -->
+          <div class="drt-control control-left" id="lft-control"><</div>
+          <div class="drt-control control-right" id="rht-control">></div>
+          <ul class="slider-controls" id="slider-controls"></ul>
+          <!-- Progressbar -->
+          <div class="tempo-bar" id="barra"></div>
+        </div>
+      </section>
+      <!-- <div class="video-slick">
+        <video width="320" height="240" controls>
+          <source src="${static.url('images/video-images/FULL_Blue_compress.mp4')}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <video width="320" height="240" controls>
+          <source src="${static.url('images/video-images/FULL_Orange_compress.mp4')}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+      </div> -->
     </section>
   </div>
 </div>
