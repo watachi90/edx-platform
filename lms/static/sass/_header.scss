@@ -4,14 +4,11 @@
   pages.
 */
 .global-header {
-  box-sizing: border-box;
   width: 100%;
   position: relative;
   overflow: hidden;
   padding-bottom: 0;
-  border-bottom: solid 4px #3fa9f5;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
-  background: #303030;
+  border-bottom: solid 1px #3fa9f5;
   line-height: 1.5;
   @include media-breakpoint-up(lg) {
     position: inherit;
@@ -21,18 +18,18 @@
     Logo and course identification block
   */
   .header-logo {
-    display: inline;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
 
     a {
-      @include float(left);
       //@include margin($baseline*0.75, 0, 0, $baseline*2);
 
       display: block;
 
       .logo {
-        @include float(left);
 
-        //height: $header-logo-height;
+        height: $header-logo-height;
       }
 
       @include media-breakpoint-down(md) {
@@ -48,8 +45,7 @@
     }
 
     .course-header {
-      @include float(left);
-      @include margin($baseline*0.8, 0, 0, $baseline);
+      margin: 5px 0 0 20px;
 
       font-size: $font-size-sm;
       color: theme-color("dark");
@@ -94,18 +90,14 @@
       }
 
       .main {
-        @include float(left);
-        @include margin($baseline, 0, 0, $baseline);
-        margin: 39px 0 0 20px;
-        .nav-item {
-          @include float(left);
-        }
+        display: none;
 
         .nav-tab {
           text-transform: none;
           padding: 0;
           cursor: pointer;
           margin: 0;
+          display: none;
 
           a {
             color: theme-color("secondary");
@@ -133,8 +125,8 @@
       }
 
       .secondary {
-        @include float(right);
         @include margin($baseline*0.75, $baseline*2, 0, 0);
+        display: flex;
 
         // All navigation items
         .nav-item {
@@ -150,15 +142,15 @@
           }
 
           a {
-            color: #fff; //theme-color("dark");
+            color: theme-color("dark");
             font-weight: $font-weight-normal;
           }
-          .help-link{
+/*           .help-link{
             background-color: #3fa9f5;
             color: white;
             padding: 10px 15px;
             border-radius: 4px;
-          }
+          } */
         }
 
 
@@ -198,10 +190,6 @@
         }
         .user-border-es{
           background-color: transparent;
-          color: white;
-          border: 1px solid #3fa9f5;
-          border-radius: 5px;
-          display: inline-block;
         }
 
         // User information
@@ -419,4 +407,9 @@
   @include float(right);
 
   padding: $baseline/2;
+}
+
+.main-header{
+  display: flex;
+    justify-content: space-between;
 }

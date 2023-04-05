@@ -27,13 +27,25 @@
 
 
 
-.wrapper-course-material .course-tabs .tab a:hover, 
-.wrapper-course-material .course-tabs .tab a:focus, 
-.wrapper-course-material .course-tabs .tab a.active, 
-.wrapper-course-material .course-tabs .tab a:visited:hover, 
-.wrapper-course-material .course-tabs .tab a:visited:focus, 
+.wrapper-course-material .course-tabs .tab a:hover,
+.wrapper-course-material .course-tabs .tab a:focus,
+.wrapper-course-material .course-tabs .tab a.active,
+.wrapper-course-material .course-tabs .tab a:visited:hover,
+.wrapper-course-material .course-tabs .tab a:visited:focus,
 .wrapper-course-material .course-tabs .tab a:visited.active {
     background-color: #ed6c4d;
+    border-bottom: none;
+    color: white;
+}
+
+.wrapper-course-material .course-tabs .tab a, 
+.wrapper-course-material .course-tabs .tab a:visited{
+    color: white;
+    font-size: 18px;
+}
+
+body.view-in-course .wrapper-course-material .course-material .course-tabs {
+    display: flex;
 }
 
 .wrapper-course-material .course-material {
@@ -47,22 +59,17 @@
 }
 
 header.global-header {
-    position: fixed;
-    top: 0;
-    z-index: 200;
     overflow: visible;
     border-bottom: solid 4px #3fa9f5;
 }
 
 .global-header .header-logo .course-header {
     display: block;
-    color: white;
 }
 
 .user-border-es {
     background-color: transparent;
     color: white;
-    border: 1px solid #3fa9f5;
     border-radius: 5px;
     display: inline-block;
 }
@@ -73,8 +80,16 @@ header.global-header {
 }
 
 .global-header .nav-links .secondary .nav-item .help-link {
-    background-color: #3fa9f5;
-    color: white;
     padding: 10px 15px;
     border-radius: 4px;
+}
+
+.wrap-instructor-info .instructor-info-action:hover{
+    background-color: #ed6c4d;
+    color: white !important;
+}
+
+a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.btn):focus {
+    color: #3fa9f5;
+    text-decoration: none;
 }
