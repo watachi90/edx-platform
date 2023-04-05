@@ -7,20 +7,17 @@ $small: 768px;
 .wrapper-footer {
   @extend %ui-print-excluded;
 
-  // box-shadow: 0 -1px 5px 0 $shadow-l1;
   border-top: 1px solid tint($m-gray, 50%);
-  //padding: 25px ($baseline/2) ($baseline*1.5) ($baseline/2);
-  //background: $body-bg;
   clear: both;
   box-shadow: none;
 	padding: 50px 0px;
-	/*background-color: $background-color_1;*/
-  background-color: #3fa9f5;
-	/*background-image: url('/static/images/bgfoot.png');*/
-  background-size: cover;
+	background: #285B83;
+  background: -moz-linear-gradient(30deg, #285B83 50%, #2c628a 50%);
+  background: -webkit-linear-gradient(30deg, #285B83 50%,#285B83 50%);
+  background: linear-gradient(30deg, #285B83 50%,#2c628a 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#285B83', endColorstr='#2c628a',GradientType=1 );
   position: relative;
   width: 100%;
-  box-shadow: none;
   color: white;
   .copyright {
     margin: 0 auto;
@@ -153,7 +150,6 @@ $small: 768px;
       display: inline-block;
       vertical-align: middle;
       width: 31.91489%;
-      float: left;
       margin-right: 14.28571%;
     }
     .footer-about-openedx{
