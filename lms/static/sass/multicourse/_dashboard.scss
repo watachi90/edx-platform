@@ -41,7 +41,7 @@
           padding-bottom: $baseline;
 
           .course-container {
-            border: 1px solid theme-color("light");
+            border: 1px solid #3fa9f5;
             border-radius: 3px;
           }
 
@@ -142,6 +142,7 @@
               a,
               span {
                 font: -apple-system-short-headline !important;
+                color: #3fa9f5;
 
                 @extend %t-title3;
                 @extend %t-regular;
@@ -227,6 +228,17 @@
                 flex-shrink: 0;
                 flex-grow: 1;
                 align-self: flex-end;
+
+                a{
+                  background-color: #3fa9f5;
+                  border: 1px solid #3fa9f5;
+                  color: white;
+
+                  &:hover{
+                    background-color: #80D5FB;
+                    border: 1px solid #80D5FB;
+                  }
+                }
               }
             }
 
@@ -328,7 +340,7 @@
                 box-shadow: none;
                 background: $white;
                 background-image: none;
-                color: $gray;
+                color: #3fa9f5;
                 line-height: 16px;
                 text-shadow: none;
               }

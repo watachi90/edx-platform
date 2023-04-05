@@ -63,7 +63,7 @@
     color: $forum-color-active-thread;
   }
 
-  .btn-brand {
+  . {
     @extend %pattern-library-btn;
 
     background-color: $forum-color-active-thread;
