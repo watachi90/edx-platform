@@ -35,7 +35,7 @@
     @include border-top-right-radius(3px);
     @include border-bottom-right-radius(3px);
 
-    background: theme-color("primary");
+    background: #3fa9f5;
     padding: 0 10px;
     height: 35px;
     color: $white;
@@ -47,7 +47,7 @@
     &:hover,
     &:focus,
     &:active {
-      background: $uxpl-blue-hover-active;
+      background: #80D5FB;
       box-shadow: none;
       border: none;
     }

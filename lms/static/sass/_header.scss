@@ -38,10 +38,6 @@
 
         height: $header-logo-height;
         width: auto;
-
-        .logo {
-          @include margin-left(-50%);
-        }
       }
     }
 
@@ -259,7 +255,6 @@
   // Responsive styling for mobile
   @include media-breakpoint-down(md) {
     .main-header {
-      height: $header-logo-height;
       position: inherit;
     }
 
