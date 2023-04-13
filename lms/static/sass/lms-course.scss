@@ -26,6 +26,10 @@
 }
 
 
+.wrapper-course-material .course-tabs{
+    padding: 0 !important;
+    display: flex;
+}
 
 .wrapper-course-material .course-tabs .tab a:hover,
 .wrapper-course-material .course-tabs .tab a:focus,
@@ -42,6 +46,11 @@
 .wrapper-course-material .course-tabs .tab a:visited{
     color: white;
     font-size: 18px;
+}
+
+.view-student-notes .wrapper-student-notes,
+.teams-content{
+    margin-top: 10px;
 }
 
 body.view-in-course .wrapper-course-material .course-material .course-tabs {
