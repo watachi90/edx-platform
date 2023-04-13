@@ -41,11 +41,11 @@
   section.slide {
     position: relative;
     display: flex;
-    height: var(--height-slider);
+    height: 300px;
   }
   @media only screen and (max-width: 766px) {
     section.slide {
-      height: var(--height-responsive);
+      height: 300px;
     }
   }
   section.slide .slider-container {
@@ -132,7 +132,7 @@
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    background: rgba(0, 0, 0, var(--opacity-slide));
+    background: rgba(0, 0, 0, 0.5);
   }
   @media only screen and (max-width: 766px) {
     section.slide .slider-container .drt-control {
@@ -191,13 +191,13 @@
     }
   }
   section.slide .slider-container .slider-controls li.active {
-    background: var(--color-slider);
+    background: grey;
   }
   section.slide .slider-container .tempo-bar {
     position: absolute;
     bottom: 0px;
     height: 5px;
-    background: var(--color-slider);
+    background: grey;
     width: 0%;
     z-index: 91;
     display: block;
