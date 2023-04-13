@@ -434,4 +434,9 @@ $small: 768px;
       text-align: center;
     }
   }
+
+  .wrapper-footer .list-unstyled,
+  .wrapper-footer .last-col{
+    padding: 0;
+  }
 }
