@@ -414,3 +414,9 @@
 .global-header .nav-links .secondary .fa-caret-down{
   color: #303030 !important;
 }
+
+@media (max-width:576px){
+  .global-header .header-logo a{
+    margin-left: 20%;
+  }
+}

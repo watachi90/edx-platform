@@ -440,4 +440,9 @@ $small: 768px;
   .wrapper-footer .last-col{
     padding: 0;
   }
+
+  .wrapper-footer .last-col h5,
+  .wrapper-footer .last-col p{
+    text-align: center;
+  }
 }
