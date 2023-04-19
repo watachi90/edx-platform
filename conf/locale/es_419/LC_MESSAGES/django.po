@@ -22266,7 +22266,7 @@ msgstr "Aprender más sobre la configuración de visibilidad de contenidos"
 #: cms/templates/edit-tabs.html cms/templates/textbooks.html
 #: cms/templates/widgets/header.html
 msgid "Pages & Resources"
-msgstr "Paginas & Recursos"
+msgstr "Paginas y Recursos"
 
 #. Translators: Custom Pages refer to the tabs that appear in the top
 #. navigation of each course.

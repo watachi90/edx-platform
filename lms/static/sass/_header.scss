@@ -51,9 +51,9 @@
 
       .course-name {
         display: block;
-        font-size: $font-size-base;
+        font-size: 1.125rem;
         margin-top: 7px;
-        font-weight: 600;
+        font-weight: 700;
       }
 
       // Hide the course header for smaller screen sizes
@@ -235,7 +235,7 @@
               padding: $baseline/2 $baseline*0.75;
               display: inline-block;
               width: 100%;
-              color: #3fa9f5;
+              color: #303030;
               &:focus {
                 outline: none;
                 color: theme-color("dark");

@@ -802,8 +802,8 @@ $text-dark-black-blue: #2c3e50;
     background-color: $uxpl-blue-hover-active !important;
 }
 
-.outline-complex .outline-subsection.is-live {
-    border-left-color: #ed6c4d !important;
+.wrapper-mast .mast, .wrapper-mast .metadata{
+    color: white !important;
 }
 
 .view-outline .outline-complex .outline-section {

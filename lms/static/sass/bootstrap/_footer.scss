@@ -9,9 +9,13 @@ $background-color_3: #00acd7;
 
 .wrapper-footer {
 	box-shadow: none;
-	padding: 50px 0px;
-	background-color: $background-color_1;
-	background-image: url('/static/images/bgfoot.png');
+	color: white;
+	padding: 10px 0px;
+	background: #285B83;
+	background: -moz-linear-gradient(30deg, #285B83 50%, #2c628a 50%);
+	background: -webkit-linear-gradient(30deg, #285B83 50%,#285B83 50%);
+	background: linear-gradient(30deg, #285B83 50%,#2c628a 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#285B83', endColorstr='#2c628a',GradientType=1 );
 	.last-col {
 		border-left: solid white 1px;
 		padding-left: 24px;
@@ -73,3 +77,44 @@ $background-color_3: #00acd7;
 		text-align: center;
 	}
 }
+
+.wrapper-footer .row {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.wrapper-footer small {
+	font-size: 88%;
+}
+
+@media (max-width: 576px) {
+	.wrapper-footer{
+	  footer{
+		.row{
+		  display: flex;
+		  flex-direction: column;
+		  flex-wrap: wrap;
+		  width: 100%;
+		  text-align: center;
+		  .col-sm{
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
+			flex: 1;
+		  }
+		}
+		.social{
+		  justify-content: center;
+		}
+	  }
+	  .last-col{
+		text-align: center;
+		border: none;
+	  }
+	}
+  
+	.wrapper-footer .list-unstyled,
+	.wrapper-footer .last-col{
+	  padding: 0;
+	}
+  }
