@@ -36,9 +36,6 @@ var toggleSock = function (e) {
 domReady(function () {
     // toggling footer additional support
     $('.cta-show-sock').bind('click', toggleSock);
-    $("#slider").QCslider();
 });
 
-
 export { toggleSock }
-
