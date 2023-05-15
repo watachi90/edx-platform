@@ -128,13 +128,11 @@
           > a.find-courses,
           a.register,
           a.add-to-cart {
-            @include button(shiny, $button-color);
             background-color: #3fa9f5;
             color: white;
             border-radius: 5px;
             box-sizing: border-box;
             display: block;
-            font: normal 1.2rem/1.6rem $font-family-sans-serif;
             letter-spacing: 1px;
             padding: ($baseline/2) 0;
             text-align: center;
@@ -159,8 +157,7 @@
           }
 
           strong {
-            @include button(shiny, $button-color);
-
+            background-color: #3fa9f5;
             box-sizing: border-box;
             border-radius: 3px;
             display: block;
@@ -685,5 +682,20 @@
         }
       }
     }
+  }
+}
+
+
+@media (max-width:576px){
+  .course-info .container{
+    flex-direction: column;
+  }
+
+  .course-info .details{
+    order: 2;
+  }
+
+  .course-info .safari-wrapper{
+    padding-bottom: 0;
   }
 }

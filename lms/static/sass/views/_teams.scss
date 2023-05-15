@@ -771,3 +771,9 @@
 .create-team.form-actions {
   margin-top: $baseline;
 }
+
+@media (max-width:576px){
+  .view-teams .card {
+    width: 100%;
+  }
+}

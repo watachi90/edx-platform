@@ -34,7 +34,7 @@
       }
 
       @include media-breakpoint-down(md) {
-        @include margin-left(50%);
+        /* @include margin-left(50%); */
 
         height: $header-logo-height;
         width: auto;
@@ -368,11 +368,11 @@
         border-bottom: 1px solid theme-color('light');
         @include text-align(left);
         cursor: pointer;
+        color: #3fa9f5;
 
         &:hover,
         &:focus {
           background-color: $gray-600;
-          color: theme-color('inverse');
         }
 
         &::after {
@@ -408,7 +408,7 @@
 
 .main-header{
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .global-header .nav-links .secondary .fa-caret-down{
@@ -416,10 +416,26 @@
 }
 
 @media (max-width:576px){
-  .view-dashboard .global-header .header-logo a{
-    margin-left: 50%;
-  }
   .global-header .header-logo a{
-    margin-left: 20%;
+    margin-left: 15%;
+  }
+
+  .global-header .header-logo a .logo{
+    vertical-align: top;
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .view-dashboard .global-header .header-logo a{
+    margin-left: 0%;
+  }
+
+  .main-header{
+    justify-content: center;
+  }
+
+  .global-header .header-logo .course-header .course-name{
+    font-size: 1rem;
+    margin-top: 0px;
   }
 }

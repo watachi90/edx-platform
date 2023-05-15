@@ -55,6 +55,14 @@
   background: $body-bg;
 }
 
+@media (max-width:576px){
+  .window-wrap {
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
 .login-register-content {
   box-sizing: border-box;
 

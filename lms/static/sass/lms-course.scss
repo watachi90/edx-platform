@@ -106,3 +106,9 @@ a:not(.btn):hover, a:not(.btn):focus, a:visited:not(.btn):hover, a:visited:not(.
     color: #3fa9f5;
     text-decoration: none;
 }
+
+@media (max-width:576px){
+    .xmodule_display.xmodule_HtmlBlock img {
+      height: auto;
+    }
+  }
