@@ -14843,7 +14843,7 @@ msgstr "Ver este curso como:"
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 #: lms/templates/preview_menu.html
 msgid "Staff"
-msgstr "Equipo"
+msgstr "Instructor Plus"
 
 #: lms/templates/preview_menu.html
 msgid "Learner"
@@ -19887,7 +19887,7 @@ msgstr "Añadir Administrador de foros de discusiones"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Course Data Researcher"
-msgstr "Investigador de datos del curso"
+msgstr "Instructor Basic"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Course Data Researchers can access the data download tab."
@@ -19897,7 +19897,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Add Course Data Researcher"
-msgstr "Añadir Investigador de datos del curso"
+msgstr "Añadir Instructor Basic"
 
 #: lms/templates/instructor/instructor_dashboard_2/membership.html
 msgid "Discussion Moderators"
